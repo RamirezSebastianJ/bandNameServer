@@ -25,6 +25,10 @@
       socket.on("message", function (data) {
         console.log("Escuchando: ", data);
       });
+
+      socket.on("active-bands", function (data) {
+        console.table(data);
+      });
     </script>
   </body>
 </html>
